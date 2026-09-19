@@ -22,3 +22,107 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Env
+.env
+.env.local
+
+# Temporary exports
+*.tmp
+*.bak
+
+# Keep realm-export.json (it's your source of truth)
+!realm-export.json
+
+# Generated datasets — never commit
+output/
+*.csv
+*.parquet
+*.json.gz
+
+# But keep scripts
+!*.py
+!*.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Model artifacts (keep out of git — large files)
+models/
+*.pkl
+*.joblib
+*.h5
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Env
+.env
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### VS Code ###
+.vscode/
+
+### Mac ###
+.DS_Store
